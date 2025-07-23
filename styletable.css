@@ -1,0 +1,19 @@
+body table {
+    background-color: rgba(131, 90, 163, 0.895);
+}
+
+table {
+    font-family: calibri;
+    color: rgb(21, 183, 156);
+}
+.tombol1 {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+.tombol1 {
+    color: rgba(131, 90, 163, 0.895);
+}
