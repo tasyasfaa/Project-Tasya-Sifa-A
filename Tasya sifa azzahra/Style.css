@@ -1,0 +1,25 @@
+body {
+    background-color: rgba(131, 90, 163, 0.895);
+}
+
+h1 {
+    color: rgb(21, 183, 156);
+    text-align: center;
+}
+#p1 {
+    font-family: calibri;
+    color: rgb(21, 183, 156);
+    text-align: justify;
+}
+#p2 {
+    font-family: calibri;
+    color: rgb(21, 183, 156);
+    text-align: justify;
+}
+.highlight {
+    color: rgba(131, 90, 163, 0.895);
+}
+.highlight #p1 {
+    color: rgba(131, 90, 163, 0.895);
+    color: rgba(131, 90, 163, 0.895);
+}

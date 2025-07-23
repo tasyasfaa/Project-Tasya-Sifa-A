@@ -1,0 +1,167 @@
+/* Reset and base */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: 'Inter', system-ui, sans-serif;
+background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+color: #e2e8f0;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+a:focus-visible {
+outline: 2px solid #a5b4fc;
+outline-offset: 2px;
+}
+
+.container {
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+padding: 0 24px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+width: 8px;
+}
+::-webkit-scrollbar-track {
+background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+background: #6366f1;
+border-radius: 4px;
+}
+
+/* Header */
+.header {
+position: sticky;
+top: 0;
+height: 64px;
+backdrop-filter: blur(16px);
+background: rgba(30, 41, 59, 0.75);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+display: flex;
+align-items: center;
+z-index: 1000;
+}
+
+.header-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.brand {
+font-weight: 900;
+font-size: clamp(1.5rem, 2vw, 2rem);
+background: linear-gradient(135deg, #6366f1 0%, #4ade80 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+user-select: none;
+}
+
+.nav {
+display: flex;
+gap: 24px;
+}
+
+.nav-link {
+font-weight: 600;
+font-size: 1rem;
+padding: 8px 12px;
+border-radius: 8px;
+color: #e2e8f0;
+transition: background 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+background: rgba(99, 102, 241, 0.3);
+}
+
+/* Gambar profil */
+.profile-pic {
+width: 150px;
+height: 150px;
+background-color: white;
+border-radius: 50%;
+margin-bottom: 20px;
+background-image: url("WhatsApp Image 2025-05-16 at 21.27.42.jpeg");
+background-size: cover;
+background-position: center;
+border: 4px solid white;
+}
+
+/* Nama */
+h1 {
+font-size: 2em;
+margin: 10px 0 5px;
+color: #5b78b2;
+}
+
+/* Judul kecil */
+h2 {
+font-size: 1.3em;
+font-weight: normal;
+margin-bottom: 15px;
+color: white;
+}
+
+/* Bio */
+.bio {
+margin-top: 10px;
+color: white;
+padding: 10px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+}
+
+/* Contact section */
+.contact-info {
+margin-top: 30px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+/* Item kontak */
+.contact-item {
+display: flex;
+align-items: center;
+gap: 10px;
+color: white;
+font-size: 1rem;
+}
+
+/* Link sosial media */
+.contact-item a {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+color: palegreen;
+text-decoration: none;
+font-weight: bold;
+}
+
+.contact-item a:hover {
+color: white;
+text-decoration: underline;
+}
+
+/* Ikon dalam kontak */
+.contact-item a svg,
+.contact-item svg {
+width: 24px;
+height: 24px;
+fill: currentColor;
+}
